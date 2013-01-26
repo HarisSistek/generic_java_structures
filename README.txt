@@ -1,0 +1,4 @@
+@author Haris Sistek
+
+Sturctures:
+
