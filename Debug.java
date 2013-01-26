@@ -23,7 +23,13 @@ class Debug {
 
     public void debug(String d) {
 	if (printAll) {
-	    System.err.printf("DEBUG: %s\n");
+	    System.err.printf("DEBUG: %s\n", d);
+	}
+    }
+
+     public void debug(int d) {
+	if (printAll) {
+	    System.err.printf("DEBUG: %s\n", d);
 	}
     }
 }
