@@ -15,5 +15,15 @@ class Tests {
 	for (int i = 0; i < 50; i++) {
 	    d.debug(link.get(i));
 	}
+
+	for (int i = 0; i < 50; i++) {
+	    link.remove(link.get(i));
+	}
+	
+	d.debug("size " + link.size());
+
+	for (int i = 0; i < 50; i++) {
+	    d.debug(link.get(i));
+	}
     }
 }
