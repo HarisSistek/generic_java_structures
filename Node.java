@@ -48,6 +48,9 @@ class Node <E extends Comparable<E>> {
 	
     }
 
+    /**
+     *Find the node i'nt in line
+     */
     public E getElementFromList(int i) {
 	
 	if (i == 0) 
@@ -61,4 +64,31 @@ class Node <E extends Comparable<E>> {
 	return null;
 	    
     }
+
+    /**
+     *Remove the node e from the list and link the nodes back together
+     */
+    public void remove(E e) {
+
+	if (e.compareTo(this.element) == 0) {
+	    if (prev != null && next != null) {//in the middle
+        
+		next.prev = prev;//my next's prev is now my prev
+		prev.next = next;//my prev's next is now my next
+		return;
+	    }
+	    
+	    if (next == null && prev != null) {//the last in the list
+		prev.next = null;//remove myself from the list
+
+	    }
+	}
+
+	if (next == null)
+	    return;
+      
+	next.remove(e);
+	
+    }
+
 }
