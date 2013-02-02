@@ -17,6 +17,10 @@ class Node <E extends Comparable<E>> {
 	element = e;
     }
 
+    public Node<E> getNext() {
+	return next;
+    }
+
     public E getElement() {
 	return element;
     }

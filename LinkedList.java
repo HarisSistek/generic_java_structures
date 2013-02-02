@@ -4,6 +4,7 @@ class LinkedList <E extends Comparable <E>> {
     
     private Node<E> head;
     private int size;
+    private Debug debug;
     
     LinkedList () {
 	size = 0;
