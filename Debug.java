@@ -6,7 +6,8 @@
  *All purpose debugger
  */
 class Debug {
-    
+
+
     private boolean printAll;
     
     Debug(boolean p) {
